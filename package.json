@@ -1,0 +1,21 @@
+{
+  "name": "temporary-json-handler",
+  "version": "1.0.0",
+  "description": "Temporary-JSON-Handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(github:VOIDabinerJR/temporary-json-handler.git)"
+  },
+  "keywords": [
+    "two",
+    "components",
+    "json",
+    "handler"
+  ],
+  "author": "VOID ABINER MZ",
+  "license": "ISC"
+}
