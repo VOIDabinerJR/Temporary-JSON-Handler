@@ -1,14 +1,14 @@
 {
   "name": "temporary-json-handler",
   "version": "1.0.0",
-  "description": "Temporary-JSON-Handler",
+  "description": "A library to handle temporary JSON data storage and retrieval",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "(github:VOIDabinerJR/temporary-json-handler.git)"
+    "url": "(https://github:VOIDabinerJR/temporary-json-handler.git)"
   },
   "keywords": [
     "two",
@@ -16,6 +16,7 @@
     "json",
     "handler"
   ],
-  "author": "VOID ABINER MZ",
-  "license": "ISC"
+  "author": "VOID ABINER - MOZAMBIQUE",
+  "license": "MIT",
+  "dependencies": {}
 }
