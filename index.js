@@ -1,6 +1,5 @@
-import { readFileSync, unlinkSync, existsSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+const { readFileSync, unlinkSync, existsSync, writeFileSync } = require('fs');
+const { join } = require('path');
 // © VOID Abiner - MOZAMBIQUE Visit my LinkedIn: https://www.linkedin.com/in/abiner-maleiane-junior-36027b207
 
 // Temporary data storage
@@ -12,7 +11,7 @@ let temporaryData = {};
  * @param {object} data - The data to be stored in the JSON file.
  */
 export function createTempJSON(jsonName, data) {
-  const filePath = join(dirname(fileURLToPath(import.meta.url)), jsonName);
+  const filePath = join(__dirname, jsonName);
   if (existsSync(filePath)) {
     unlinkSync(filePath);
   }
@@ -31,7 +30,7 @@ export function createTempJSON(jsonName, data) {
  * @returns {object|null} - The data copied from the JSON file, or null if an error occurs.
  */
 export function copyFromTempAndDeleteJSON(jsonName) {
-  const filePath = join(dirname(fileURLToPath(import.meta.url)), jsonName);
+  const filePath = join(__dirname, jsonName);
   try {
     const data = readFileSync(filePath, 'utf8');
     const jsonData = JSON.parse(data);
